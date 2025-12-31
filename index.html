@@ -40,15 +40,50 @@
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>🐅 Jeep Safari Booking</li>
-    <li>🐯 Canter Safari Booking</li>
-    <li>📅 Advance & Tatkal Booking</li>
-    <li>🕒 Morning & Evening Safari</li>
-    <li>📍 All Ranthambore Zones</li>
-  </ul>
-  <a class="btn" href="https://wa.me/919694311100" target="_blank">Book on WhatsApp</a>
+  <h2>Safari Booking Form</h2>
+  <p>Booking ke liye niche form bharein. Submit karte hi details automatic Excel / Google Sheet me save ho jayengi.</p>
+
+  <form method="post" action="https://script.google.com/macros/s/PASTE_YOUR_SCRIPT_URL/exec">
+    <label>Full Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Gender:</label><br>
+    <select name="gender" required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <label>Aadhaar Card Number:</label><br>
+    <input type="text" name="aadhaar" maxlength="12" required><br><br>
+
+    <label>Mobile Number:</label><br>
+    <input type="tel" name="mobile" required><br><br>
+
+    <label>Booking Type:</label><br>
+    <select name="booking_type" required>
+      <option>Jeep Safari</option>
+      <option>Canter Safari</option>
+    </select><br><br>
+
+    <label>Booking Date:</label><br>
+    <input type="date" name="booking_date" required><br><br>
+
+    <label>Safari Shift:</label><br>
+    <select name="shift" required>
+      <option>Morning</option>
+      <option>Evening</option>
+    </select><br><br>
+
+    <button type="submit" class="btn">Submit Booking</button>
+  </form>
+
+  <br>
+  <a class="btn" href="https://wa.me/919694311100" target="_blank">Direct WhatsApp Booking</a>
 </section>
 
 <section id="contact">
@@ -66,3 +101,4 @@
 
 </body>
 </html>
+
