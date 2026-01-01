@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranthambore Tiger Safari Booking</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#f5f5f5}
+    header{background:#1b5e20;color:#fff;padding:20px;text-align:center}
+    nav{background:#2e7d32;padding:10px;text-align:center}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+    section{padding:30px;background:#fff;margin:15px;border-radius:8px}
+    h2{color:#1b5e20}
+    .btn{display:inline-block;background:#25D366;color:#fff;padding:12px 20px;border-radius:5px;text-decoration:none;font-weight:bold}
+    footer{background:#1b5e20;color:#fff;text-align:center;padding:15px}
+  </style>
+</head>
+<body onload="setLang('en')">
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    el.innerHTML = el.getAttribute('data-'+lang);
+  });
+}
+</script>
+
+<header style="background:url('ranthambore-tiger-jeep-safari-700-1.jpg') center/cover no-repeat; color:white;">
+  <div style="background:rgba(0,60,0,0.6); padding:40px; text-align:center;">
+    <h1 data-en="Ranthambore Tiger Safari Booking" data-hi="रणथम्भौर टाइगर सफारी बुकिंग" style="font-size:48px; font-family:'Trebuchet MS', sans-serif; color:#c8e6c9; text-shadow:2px 2px 6px #1b5e20;">
+      Ranthambore Tiger Safari Booking
+    </h1>
+    <p data-en="Trusted Safari Booking Agent in Sawai Madhopur" data-hi="सवाई माधोपुर का विश्वसनीय सफारी बुकिंग एजेंट" style="font-size:20px; color:#a5d6a7;">
+      Trusted Safari Booking Agent in Sawai Madhopur
+    </p>
+  </div>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <span style="float:right;">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('hi')">हिंदी</button>
+  </span>
+</nav>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    el.innerText = el.getAttribute('data-'+lang);
+  });
+}
+</script>
+
+<section id="home">
+  <h2 data-en="Welcome" data-hi="स्वागत है">Welcome</h2>
+  <p data-en="Ranthambore National Park is one of India's most famous tiger reserves. We help tourists book authentic Jeep and Canter safaris." data-hi="रणथम्भौर नेशनल पार्क भारत के प्रसिद्ध टाइगर रिज़र्व में से एक है। हम पर्यटकों को असली जीप और कैंटर सफारी बुक करने में मदद करते हैं।"></p>
+</section>
+
+<section id="about">
+  <h2 data-en="About Us" data-hi="हमारे बारे में">About Us</h2>
+  <p data-en="My name is Murli Manohar. I am a local safari booking agent from Sawai Madhopur providing trusted Ranthambore safari bookings." data-hi="मेरा नाम मुरली मनोहर है। मैं सवाई माधोपुर से एक स्थानीय सफारी बुकिंग एजेंट हूँ जो भरोसेमंद रणथम्भौर सफारी बुकिंग सेवा देता हूँ।"></p>
+</section>
+
+<section id="services">
+  <h2 data-en="Safari Services & Zones" data-hi="सफारी सेवाएँ और ज़ोन">Safari Services & Zones</h2>
+  <ul>
+    <li data-en="Jeep Safari" data-hi="जीप सफारी">Jeep Safari</li>
+    <li data-en="Canter Safari" data-hi="कैंटर सफारी">Canter Safari</li>
+    <li data-en="Morning & Evening Shift" data-hi="सुबह और शाम की शिफ्ट">Morning & Evening Shift</li>
+  </ul>
+  <p data-en="All Ranthambore Zones: Zone 1 to Zone 10" data-hi="रणथम्भौर के सभी ज़ोन: ज़ोन 1 से ज़ोन 10"></p>
+  <a class="btn" href="https://wa.me/919694311100" target="_blank" data-en="Book on WhatsApp" data-hi="व्हाट्सएप पर बुक करें">Book on WhatsApp</a>
+</section>
+
+<section id="gallery">
+  <h2 data-en="Photo Gallery" data-hi="फोटो गैलरी">Photo Gallery</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;">
+    <img src="tiger-safari-in-jeep-ranthambhore-tiger-reserve.jpg" alt="Tiger Safari Jeep" style="width:100%;border-radius:10px;">
+    <img src="ranthambore-tiger-jeep-safari-700-1.jpg" alt="Ranthambore Tiger" style="width:100%;border-radius:10px;">
+    <img src="angry-4385233_1920.jpg" alt="Angry Bengal Tiger" style="width:100%;border-radius:10px;">
+    <img src="Nitish-Madan-bengal-tiger-2.jpg" alt="Tiger at Ranthambore Lake" style="width:100%;border-radius:10px;">
+    <img src="Bengal-tiger-Ranthambore-National-Park.--1024x635.jpg" alt="Ranthambore Tiger Portrait" style="width:100%;border-radius:10px;">
+    <img src="gettyimages-1308613248-1024x1024.jpg" alt="Tigers Walking in Jungle" style="width:100%;border-radius:10px;">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Name:</strong> Murli Manohar</p>
+  <p><strong>Business:</strong> Ranthambore Jungle Safari</p>
+  <p><strong>City:</strong> Sawai Madhopur, Rajasthan</p>
+  <p><strong>Mobile:</strong> 96943 11100</p>
+  <a class="btn" href="https://wa.me/919694311100" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2025 Ranthambore Jungle Safari | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
