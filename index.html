@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranthambore Tiger Safari Booking</title>
+  <title>Ranthambore Jungle Safari</title>
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#f5f5f5}
     header{background:#1b5e20;color:#fff;padding:20px;text-align:center}
@@ -26,11 +26,11 @@ function setLang(lang){
 
 <header style="background:url('ranthambore-tiger-jeep-safari-700-1.jpg') center/cover no-repeat; color:white;">
   <div style="background:rgba(0,60,0,0.6); padding:40px; text-align:center;">
-    <h1 data-en="Ranthambore Tiger Safari Booking" data-hi="रणथम्भौर टाइगर सफारी बुकिंग" style="font-size:48px; font-family:'Trebuchet MS', sans-serif; color:#c8e6c9; text-shadow:2px 2px 6px #1b5e20;">
-      Ranthambore Tiger Safari Booking
+    <h1 data-en="Ranthambore Jungle Safari" data-hi="रणथम्भौर टाइगर सफारी बुकिंग" style="font-size:48px; font-family:'Trebuchet MS', sans-serif; color:#c8e6c9; text-shadow:2px 2px 6px #1b5e20;">
+      Ranthambore Jungle Safari
     </h1>
-    <p data-en="Trusted Safari Booking Agent in Sawai Madhopur" data-hi="सवाई माधोपुर का विश्वसनीय सफारी बुकिंग एजेंट" style="font-size:20px; color:#a5d6a7;">
-      Trusted Safari Booking Agent in Sawai Madhopur
+    <p data-en="Experience the Wild. Book with Trust." data-hi="सवाई माधोपुर का विश्वसनीय सफारी बुकिंग एजेंट" style="font-size:20px; color:#a5d6a7;">
+      Experience the Wild. Book with Trust.
     </p>
   </div>
 </header>
@@ -89,13 +89,31 @@ function setLang(lang){
 </section>
 
 <section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Name:</strong> Murli Manohar</p>
-  <p><strong>Business:</strong> Ranthambore Jungle Safari</p>
-  <p><strong>City:</strong> Sawai Madhopur, Rajasthan</p>
-  <p><strong>Mobile:</strong> 96943 11100</p>
-  <a class="btn" href="https://wa.me/919694311100" target="_blank">Chat on WhatsApp</a>
+  <h2 data-en="Inquiry Form" data-hi="जानकारी के लिए फॉर्म">Inquiry Form</h2>
+  <form onsubmit="sendWhatsApp(); return false;" style="max-width:500px;">
+    <input type="text" id="name" placeholder="Name" required style="width:100%;padding:10px;margin:5px 0;">
+    <input type="tel" id="mobile" placeholder="Mobile Number" required style="width:100%;padding:10px;margin:5px 0;">
+    <select id="type" style="width:100%;padding:10px;margin:5px 0;">
+      <option>Jeep Safari</option>
+      <option>Canter Safari</option>
+    </select>
+    <input type="date" id="date" style="width:100%;padding:10px;margin:5px 0;">
+    <textarea id="message" placeholder="Message" style="width:100%;padding:10px;margin:5px 0;"></textarea>
+    <button type="submit" style="background:#1b5e20;color:white;padding:12px;width:100%;border:none;">Send Inquiry on WhatsApp</button>
+  </form>
 </section>
+
+<script>
+function sendWhatsApp(){
+  var name=document.getElementById('name').value;
+  var mobile=document.getElementById('mobile').value;
+  var type=document.getElementById('type').value;
+  var date=document.getElementById('date').value;
+  var msg=document.getElementById('message').value;
+  var text=`New Safari Inquiry%0AName: ${name}%0AMobile: ${mobile}%0AType: ${type}%0ADate: ${date}%0AMessage: ${msg}`;
+  window.open('https://wa.me/919694311100?text='+text,'_blank');
+}
+</script>
 
 <footer>
   <p>© 2025 Ranthambore Jungle Safari | All Rights Reserved</p>
